@@ -1,0 +1,316 @@
+body {
+    background: #B0BEC5;
+    font-family: "Open Sans", Arial, SansSerif;
+}
+textarea {
+    font-family: "Open Sans", Arial, SansSerif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+a {
+    font-size:11px;
+    text-align: center;
+    font-weight: bold;
+    color: #aa1b1b;
+}
+
+#header{
+    margin: 0 auto;
+    padding: 1% 0;
+    border-bottom:1px solid #aa1b1b;
+}
+
+#footer{
+    padding-top:10px;
+    border-top:1px solid #aa1b1b;
+}
+
+#itemsContainer {
+    position: relative;
+}
+
+#items {
+    border: 1px solid #aa1b1b;
+    margin: 20px auto;
+    padding-top: 15px;
+}
+
+.item {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    padding: 5px;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.item:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+
+.small-item {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+}
+
+/*DROPZONES*/
+#zones{
+width: 31%;
+}
+
+#z1 {
+    fill: #aa1b1b;
+}
+
+#z2 {
+    fill: #b12f2f;
+}
+
+#z3 {
+    fill: #b94444;
+}
+
+#z4 {
+    fill: #c15959;
+}
+
+#z5 {
+    fill: #c86d6d;
+}
+
+#z6 {
+    fill: #d08282;
+}
+
+#cls-7 {
+    font-size: 25px;
+    fill: #fff;
+    font-weight: 700;
+}
+
+.dragover {
+    stroke: #fff;
+    stroke-dasharray: 5,5,5;
+    stroke-width: 2;
+    border: 2px #FFFFFF;
+}
+
+.invisible {
+    display: none;
+}
+
+
+/*Buttons*/
+#submitbutton:hover {
+    background-color: #d08081;
+}
+
+#info{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 5px;
+    cursor: help;
+    /*z-index: 1;
+    left: 87.5%; TODO Das Styling von dem Infobutton ist noch sehr mäßig gelungen */
+}
+
+.button {
+    background: #e7ebed;
+    color: #ac1813;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+}
+
+
+/* Modals */
+.modal-background {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header__title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-header__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Modal Content/Box */
+.modal {
+    background-color: #fefefe;
+    border-radius: 1px;
+    margin: 0 auto;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px 5px #37474fe8;
+}
+
+/* The Close Button */
+.modalButtonStyle {
+
+    background: #e7ebed;
+    color: #ac1813;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 10px;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+    width: 150px;
+}
+
+.modalButtonStyle:hover {
+    background-color: #d08081;
+
+}
+
+.modalClose {
+    background: #363636;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 30px;
+    border-radius: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 4px 5px -3px #37474fe8;
+    width: 150px;
+}
+
+.modalClose:hover {
+    background-color: #B0BEC5;
+}
+
+/* Slider */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    vertical-align: baseline;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #aa1b1b;
+    cursor: ew-resize;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #aa1b1b;
+    cursor: ew-resize;
+}
+
+.singleSliderResult{
+    font-weight: bold;
+    color: #fff;
+}
+
+.remainingTime {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+    background: #B0BEC5;
+    transition: color 0.8s;
+}
+.timebudget-exceeded {
+    color: #aa1b1b;
+}
+.timebudget-exceeded-warning {
+    color: #aa1b1b;
+    display: none;
+}
+
+.timebudget-exceeded .timebudget-exceeded-warning {
+    display: block;
+}
+
+.input-rows {
+    background-color: #B0BEC5;
+    border-top: 1px #fff dashed;
+    margin: 0; !important;
+}
+
+.activityInput {
+    width: 80%;
+}
+.current-selection {
+    position: absolute;
+    background: #B0BEC5;
+    padding: 5px 10px;
+    font-size: 12px;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ac1813;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}

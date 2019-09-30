@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MRT</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="row">
+    <div class="container d-flex justify-content-center" id="header">
+        <img src="images/logo.png" alt="UDK Logo" width="20%" height="100%">
+    </div>
+</div>
+
+<!-- ACTIVITY ITEMS -->
+<div class="row">
+    <div class="container d-flex justify-content-end" id="itemStorgae">
+        <div id="itemsContainer" class="container">
+            <div class="container d-flex justify-content-center flex-wrap zone" id="items"></div>
+        </div>
+
+        <!-- INFO BUTTON -->
+        <div class="d-flex justify-content-end">
+            <img src="images/information.png" id="info" draggable="false" title="Anleitung"
+                 data-toggle="tooltip">
+        </div>
+    </div>
+</div>
+
+<!-- DROPZONES -->
+<div class="row">
+    <div class="container dropzones" id="zones">
+        <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+            <circle id ="z6" class="zone" cx="300" cy="300" r="300"/>
+            <circle id="z5" class="zone" cx="299" cy="300" r="250"/>
+            <circle id="z4" class="zone" cx="300" cy="300" r="200"/>
+            <circle id="z3" class="zone" cx="300" cy="300" r="150"/>
+            <circle id="z2" class="zone" cx="300" cy="300" r="100"/>
+            <circle id="z1" class="zone" cx="300" cy="300" r="50"/>
+            <text id="cls-7" transform="translate(272.07 312.82)"></text>
+        </svg>
+    </div>
+</div>
+
+<!-- SUBMIT BUTTON -->
+<div class="row">
+    <div class="container d-flex justify-content-center">
+        <button type="button" class="button" id="submitbutton">Weiter</button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="row">
+    <div class="container d-flex justify-content-between" id="footer">
+        <a href="mailto:tutoren.suckfuell@gmail.com">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </div>
+</div>
+
+<!-- APPLICATION SCRIPT - DON'T TOUCH! -->
+<script src="dist/app.bundle.js"></script>
+
+</body>
+</html>

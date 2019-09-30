@@ -1,0 +1,10 @@
+{
+  "circleCenter":"ich",
+  "instruction_title": "Ausfüllhinweise",
+  "instruction_text": "Mit diesem Tool möchten wir etwas über Ihre Mediennutzung erfahren. <br><br> Oben sehen Sie Icons verschiedener Mediengeräte. Darunter sehen Sie eine Abbildung mit mehreren Kreisen - in der Mitte steht das 'Ich'. <br><br> Im ersten Schritt bitten wir Sie, alle Mediengeräte, die Sie in Ihrem Alltag verwenden mit der Maus in die Kreise einzusortieren. Dabei sollen Sie Mediengeräte, die für Sie persönlich am wichtigsten sind, auch am nähesten ans 'Ich' legen. Mediengeräte, die für Sie weniger relevant sind, können Sie in die weiter vom 'Ich' entfernten Kreise legen. Ob Sie das Icon links, rechts, oben oder unten in die Kreise legen, spielt keine Rolle - entscheidend ist der Abstand zum 'Ich'. Nutzen Sie ein Mediengerät gar nicht, so sortieren Sie es einfach nicht ein. <br><br> Abschließend klicken Sie bitte auf 'weiter'",
+  "timeBudget_title": "Zeitbudget",
+  "timeBudget_text":"Bitte geben Sie auf den Schiebereglern an, wie viel Zeit ihrer Mediennutzung Sie mit den einzelnen Mediengeräten verbringen. Insgesamt sollen Sie 100% Ihrer Mediennutzungszeit verteilen.",
+  "timeBudget_exceeded": "Bitte verteilen Sie nicht mehr als 100% Ihres Zeitbudgets",
+  "activity_title": "Zweck der Mediennutzung",
+  "activity_text": "Bitte geben Sie an, für welchen Zweck Sie die entsprechenden Mediengeräte hauptsächlich nutzen. <br> Beispiel: Den TV nutze ich, um mich zu entspannen."
+}
