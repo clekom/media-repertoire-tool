@@ -5,7 +5,7 @@ Das Tool habe ich im Rahmen meiner Arbeit am Lehrstuhl für Kommunikations- und 
 ## Beispiel
 Eine beispielhafte Befragung kann unter https://clemenskommerell.de/mrt getestet werden.
 
-##Setup
+## Setup
 ### Voraussetzungen
 Das MRT ist für die Nutzung auf einem herkömmlichen Webspace ausgerichtet. Dabei werden eine Php-Umgebung sowie MySQL-Datenbank mit Schreibrechten vorausgesetzt.
 
