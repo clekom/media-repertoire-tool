@@ -7,11 +7,11 @@ switch ($_SERVER['SERVER_NAME']) {
         $pw = "lokales password";
         break;
 
-    case 'clemenskommerell.de':
-        $dbname = "d02fca13";
-        $host = "w0189a1e.kasserver.com";
-        $user = "d02fca13";
-        $pw = "ZJknQS5PsUQkdz2t";
+    case 'server host name or ip':
+        $dbname = "database name on server";
+        $host = "host name or ip adress";
+        $user = "user name for remote database";
+        $pw = "password for remote user";
         break;
 }
 ?>
